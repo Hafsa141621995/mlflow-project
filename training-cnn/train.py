@@ -129,4 +129,4 @@ with mlflow.start_run():
     # ------------------
     # Save model
     # ------------------
-    mlflow.pytorch.log_model(model, "cnn_fashion_mnist")
+    mlflow.pytorch.log_model(model, artifact_path="model", registered_model_name="cnn_fashion_mnist")

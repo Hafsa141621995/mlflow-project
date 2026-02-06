@@ -1,0 +1,6 @@
+.env
+mlruns/
+__pycache__/
+*.pth
+*.zip
+*.csv
