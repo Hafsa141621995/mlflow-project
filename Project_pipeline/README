@@ -1,0 +1,32 @@
+# IA dans le Cloud – Azure ML Pipeline
+
+## Objectif
+Entraîner et évaluer un modèle de machine learning dans le cloud
+en utilisant Azure Machine Learning et MLflow.
+
+## Architecture
+- Azure ML Studio
+- Dataset (uri_file)
+- Pipeline : preprocess → train → evaluate
+
+## Pipeline
+- preprocess.py : encodage des variables catégorielles
+- train.py : entraînement du modèle
+- evaluate.py : évaluation sur jeu de test
+
+## Exécution
+Le pipeline est exécuté via Azure ML Studio (compute cluster).
+
+
+![alt text][def]
+
+
+## Résultat
+- Pipeline complétée avec succès
+- Accuracy affichée dans les logs
+
+## Screenshots
+(ici tu mets tes captures)
+
+
+[def]: image.png
