@@ -1,17 +1,17 @@
 from fastapi import FastAPI
-import joblib
-import numpy as np
+from pydantic import BaseModel
 
-app = FastAPI()
+app = FastAPI(title="ML API – Notebook 4")
 
-model = joblib.load("model.joblib")
+class Item(BaseModel):
+    x: float
+    y: float
 
 @app.get("/")
-def home():
+def root():
     return {"message": "API is running"}
 
 @app.post("/predict")
-def predict(features: list):
-    X = np.array(features).reshape(1, -1)
-    prediction = model.predict(X)
-    return {"prediction": int(prediction[0])}
+def predict(item: Item):
+    result = item.x + item.y
+    return {"result": result}
