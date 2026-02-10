@@ -13,5 +13,4 @@ def root():
 
 @app.post("/predict")
 def predict(item: Item):
-    result = item.x + item.y
-    return {"result": result}
+    return {"result": item.x + item.y}
