@@ -1,6 +1,7 @@
-# mlflow-project
+# Mlflow-project
 
-## Explication Complète et Académique
+## Explication Complète des nootebooks
+
 ### Objectif global de la formation
 
 La formation avait pour objectif de comprendre comment :
